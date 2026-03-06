@@ -1,0 +1,437 @@
+{
+  "timestamp": "2026-03-06T04:02:43.206Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-03-06T03:59:14.363Z",
+    "activeFeatures": [
+      "bkend",
+      "transactions",
+      "corp-card-manager",
+      "signup",
+      "login",
+      "send",
+      "verify",
+      "callback",
+      "users",
+      "[id]",
+      "promote-admin"
+    ],
+    "primaryFeature": "bkend",
+    "features": {
+      "bkend": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:28:38.926Z",
+          "lastUpdated": "2026-03-06T02:40:51.748Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\lib\\bkend\\auth.ts"
+      },
+      "transactions": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:29:00.592Z",
+          "lastUpdated": "2026-03-06T02:40:48.064Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\transactions\\route.ts"
+      },
+      "corp-card-manager": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:36:59.587Z",
+          "lastUpdated": "2026-03-06T03:50:50.720Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\page.tsx"
+      },
+      "signup": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:43:56.186Z",
+          "lastUpdated": "2026-03-06T03:01:37.579Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\auth\\signup\\route.ts"
+      },
+      "login": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:44:20.435Z",
+          "lastUpdated": "2026-03-06T03:06:01.831Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\login\\page.tsx"
+      },
+      "send": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:53:12.517Z",
+          "lastUpdated": "2026-03-06T03:01:40.694Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\auth\\verify\\send\\route.ts"
+      },
+      "verify": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:53:33.460Z",
+          "lastUpdated": "2026-03-06T02:53:33.460Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\signup\\verify\\page.tsx"
+      },
+      "callback": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T02:53:52.193Z",
+          "lastUpdated": "2026-03-06T03:01:50.628Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\auth\\callback\\page.tsx"
+      },
+      "users": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T03:50:05.339Z",
+          "lastUpdated": "2026-03-06T03:59:14.363Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\users\\route.ts"
+      },
+      "[id]": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T03:50:12.034Z",
+          "lastUpdated": "2026-03-06T03:50:12.034Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\users\\[id]\\route.ts"
+      },
+      "promote-admin": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T03:54:37.130Z",
+          "lastUpdated": "2026-03-06T03:56:36.248Z"
+        },
+        "lastFile": "D:\\김영진\\code\\spec_kit\\corp-card-manager\\src\\app\\api\\auth\\promote-admin\\route.ts"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-03-06T02:19:25.916Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-03-06T03:59:14.363Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-03-06T02:28:38.926Z",
+        "feature": "bkend",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:29:00.592Z",
+        "feature": "transactions",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:33:53.403Z",
+        "feature": "bkend",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:34:10.850Z",
+        "feature": "transactions",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:36:59.587Z",
+        "feature": "corp-card-manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:37:08.020Z",
+        "feature": "corp-card-manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:39:05.187Z",
+        "feature": "bkend",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:40:48.064Z",
+        "feature": "transactions",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:40:51.748Z",
+        "feature": "bkend",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:43:56.186Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:44:15.839Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:44:20.435Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:44:24.662Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:45:41.507Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:48:25.341Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:50:12.960Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:50:19.119Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:50:24.038Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:53:08.054Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:53:12.517Z",
+        "feature": "send",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:53:33.460Z",
+        "feature": "verify",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:53:52.193Z",
+        "feature": "callback",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:53:57.224Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:54:01.069Z",
+        "feature": "corp-card-manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:55:23.739Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:55:29.180Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:56:24.667Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T02:56:27.770Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:01:37.579Z",
+        "feature": "signup",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:01:40.694Z",
+        "feature": "send",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:01:50.628Z",
+        "feature": "callback",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:05:41.240Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:05:50.032Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:05:54.315Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:06:01.831Z",
+        "feature": "login",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:50:05.339Z",
+        "feature": "users",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:50:12.034Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:50:37.477Z",
+        "feature": "users",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:50:50.720Z",
+        "feature": "corp-card-manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:54:37.130Z",
+        "feature": "promote-admin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:56:36.248Z",
+        "feature": "promote-admin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:58:44.040Z",
+        "feature": "users",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T03:59:14.363Z",
+        "feature": "users",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

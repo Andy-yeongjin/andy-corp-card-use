@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-06T00:06:46.363Z",
+  "activeFeatures": [
+    "corporate-card-dashboard"
+  ],
+  "primaryFeature": "corporate-card-dashboard",
+  "features": {
+    "corporate-card-dashboard": {
+      "phase": "plan",
+      "status": "completed",
+      "matchRate": 0,
+      "updatedAt": "2026-03-06T00:00:00.000Z"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Starter",
+    "phaseHistory": [
+      {
+        "phase": 1,
+        "name": "Schema",
+        "status": "pending"
+      }
+    ]
+  }
+}

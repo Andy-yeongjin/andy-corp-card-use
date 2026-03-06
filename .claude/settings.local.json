@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/ALTUM-PC/.claude/plugins/**)",
+      "Read(//c/Users/ALTUM-PC/.claude/plugins/bkit/**)",
+      "Skill(bkit:bkend-data)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Skill(bkit:bkend-auth)",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(claude mcp:*)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\(''mcpServers'', {}\\), indent=2\\)\\)\")",
+      "Bash(python3:*)",
+      "Read(//d/김영진/code/spec_kit/**)",
+      "Read(//d/김영진/code/**)",
+      "Read(//c/Users/ALTUM-PC/**)",
+      "Read(//d//**)",
+      "Bash(cp:*)"
+    ]
+  }
+}
