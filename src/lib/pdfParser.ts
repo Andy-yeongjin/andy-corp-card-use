@@ -54,10 +54,7 @@ export async function parseCardPDF(file: File, password?: string): Promise<Parti
       transactions.push({
         transactionDate: `${currentYear}-${match[1].replace("/", "-")}`,
         merchantName: match[2].trim(), // 한글 깨짐 현상 존재
-        amount: parseInt(match[3].replace(/,/g, ""), 10),
-        approvalNumber: "-", // 이용대금명세서에는 승인번호가 없음
-        status: 'parsed',
-        createdAt: new Date().toISOString(),
+        amount: parseInt(match[3].replace(/,/g, ""), 10)
       });
     }
 
