@@ -126,13 +126,28 @@ AI 분석이 완벽할 수 없음을 인정하고, 시스템의 신뢰도를 높
 - **HF Space 구성**: Docker SDK, Python 3.10-slim, FastAPI + EasyOCR + PyMuPDF
 - **주의사항**: HF Space 무료 플랜은 비활성 시 슬립 → 첫 요청 콜드스타트 약 30초 소요. 환경변수 `HF_OCR_URL`로 URL 관리 (Vercel 환경변수에도 동일하게 등록 필요).
 
-## 6. 최종 시스템 아키텍처 요약
-- **Frontend**: Next.js 14 + Tailwind CSS (User 검수 UI) → Vercel 배포
-- **OCR Engine**: Python 3.10 + EasyOCR → Hugging Face Spaces (Docker) 별도 배포
-- **Backend**: bkend.ai (Auth & Data)
-- **Verification**: 명세서 총액 대조 및 금액 불일치 시 저장 차단 로직 적용
-- **배포 현황**:
-    - HF Space (OCR): 빌드 완료, `https://pappoi-corp-card-use.hf.space/health` 정상 응답 확인
-    - GitHub (OCR): `https://github.com/Andy-yeongjin/corp-card-use` 업로드 완료
-    - GitHub (웹): `https://github.com/Andy-yeongjin/corp-card-use-web` — git init, .gitignore 추가, 커밋까지 완료. push는 아직 안 함 (사용자가 중단)
-    - Vercel: 아직 미배포. 환경변수 `HF_OCR_URL` 등록 필요
+### 이슈 11: OCR 처리 중 블랙박스 현상 (진행 상황 파악 불가)
+- **증상**: PDF 변환 버튼 클릭 후 약 20초간 서버가 묵묵부답이라 작동 여부 확인 불가.
+- **해결 (Gemini CLI 구현)**: 
+    - Hugging Face `app.py`에 단계별 로깅(`logging`) 도입.
+    - 1페이지 총액 분석, 페이지별 상세 내역 추출 진행 상황을 서버 로그에 실시간 출력.
+- **결과**: Hugging Face 콘솔에서 AI의 작업 상태를 실시간 모니터링 가능해짐.
+
+### 이슈 12: 저장소 분리 및 배포 혼선
+- **증상**: 웹 코드와 OCR 엔진 코드가 섞여서 배포 경로가 꼬임.
+- **해결 (Gemini CLI 가이드)**: 
+    - **Web**: `andy-corp-card-use` (Next.js + Tailwind)
+    - **OCR**: `corp-card-use` (Python + Docker + HF Space)
+    - 두 저장소를 명확히 분리하고 각각 Vercel과 Hugging Face에 연결 완료.
+
+## 6. 최종 시스템 아키텍처 요약 (Last Updated by Gemini CLI)
+- **Frontend**: Next.js 14 + Tailwind CSS (Vercel 배포)
+- **OCR Engine**: Python 3.10 + EasyOCR + FastAPI (Hugging Face Spaces 배포)
+- **Backend**: bkend.ai (Auth & Data 실연동 완료)
+- **Verification**: 1페이지 청구 총액 vs 상세 내역 합계 실시간 교차 검증 (Mismatch 방지)
+- **Repository**:
+    - Web UI: `https://github.com/Andy-yeongjin/andy-corp-card-use`
+    - OCR API: `https://github.com/Andy-yeongjin/corp-card-use`
+
+---
+*이 로직은 2026-03-06 기준으로 Gemini CLI에 의해 최종 고도화 및 문서화되었습니다. 모든 한글 깨짐 및 데이터 적재 이슈가 해결된 상태입니다.*
